@@ -7,4 +7,7 @@ In corpus linguistics different kinds of formats are in use. This JAVA projects 
 an ease way to work with some of them in an intuitive object oriented way and convert from one
 format to another.
 
-For detailed information please read the Ausarbeitung.pdf document (in german).
+This project evolved from a hands-on seminar at the chair in Computational Linguistics at the
+University of Trier. For detailed information please read the Ausarbeitung.pdf document (in german).
+
+For an API usage example take a look at /src/Sample.java. 
