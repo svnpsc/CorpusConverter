@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus>
+    <body>
+        <s>
+            <graph>
+                <terminals>
+                    <t word="ein"/>
+                </terminals>
+                <nonterminals/>
+            </graph>
+        </s>
+    </body>
+</corpus>

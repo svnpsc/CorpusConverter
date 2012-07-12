@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus id="/Users/sven/Documents/Uni/Korpuslinguistik/CoNLL/CoNLL2009-ST-German-trial.txt">
+    <head>
+        <annotation>
+            <feature domain="T" name="word"/>
+            <feature domain="T" name="other">
+                <value name="$("/>
+                <value name="NN"/>
+                <value name="NE"/>
+                <value name="VAFIN"/>
+                <value name="ADV"/>
+                <value name="ART"/>
+                <value name="ADJA"/>
+                <value name="VVFIN"/>
+                <value name="KOKOM"/>
+                <value name="PTKVZ"/>
+                <value name="ADJD"/>
+                <value name="APPR"/>
+                <value name="PPOSAT"/>
+                <value name="VVPP"/>
+                <value name="$."/>
+                <value name="APPRART"/>
+                <value name="KON"/>
+                <value name="KOUS"/>
+                <value name="VVINF"/>
+                <value name="VMFIN"/>
+                <value name="$,"/>
+                <value name="PROAV"/>
+                <value name="PDAT"/>
+                <value name="KOUI"/>
+                <value name="PTKZU"/>
+                <value name="PIAT"/>
+                <value name="PTKNEG"/>
+                <value name="PRF"/>
+                <value name="CARD"/>
+                <value name="FM"/>
+                <value name="PPER"/>
+                <value name="PIS"/>
+                <value name="PDS"/>
+                <value name="PRELS"/>
+                <value name="APPO"/>
+                <value name="VVIZU"/>
+                <value name="PWAV"/>
+                <value name="PRELAT"/>
+                <value name="TRUNC"/>
+                <value name="VVIMP"/>
+                <value name="VAINF"/>
+                <value name="PWS"/>
+                <value name="PPOSS"/>
+                <value name="VMINF"/>
+                <value name="VAPP"/>
+                <value name="APZR"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="NT" name="pos">
+                <value name="S"/>
+                <value name="$("/>
+                <value name="NE"/>
+                <value name="VAFIN"/>
+                <value name="ADV"/>
+                <value name="ART"/>
+                <value name="ADJA"/>
+                <value name="NN"/>
+                <value name="VVFIN"/>
+                <value name="APPR"/>
+                <value name="PTKVZ"/>
+                <value name="PPOSAT"/>
+                <value name="VVPP"/>
+                <value name="$."/>
+                <value name="FM"/>
+                <value name="ADJD"/>
+                <value name="APPRART"/>
+                <value name="KON"/>
+                <value name="KOUS"/>
+                <value name="VVINF"/>
+                <value name="VMFIN"/>
+                <value name="$,"/>
+                <value name="PROAV"/>
+                <value name="PDAT"/>
+                <value name="KOUI"/>
+                <value name="PTKZU"/>
+                <value name="PIAT"/>
+                <value name="PTKNEG"/>
+                <value name="PIS"/>
+                <value name="PRF"/>
+                <value name="CARD"/>
+                <value name="PPER"/>
+                <value name="ITJ"/>
+                <value name="PDS"/>
+                <value name="KOKOM"/>
+                <value name="PRELS"/>
+                <value name="APPO"/>
+                <value name="PWAT"/>
+                <value name="PWAV"/>
+                <value name="VVIZU"/>
+                <value name="PWS"/>
+                <value name="XY"/>
+                <value name="PRELAT"/>
+                <value name="TRUNC"/>
+                <value name="VAINF"/>
+                <value name="VVIMP"/>
+                <value name="VMINF"/>
+                <value name="VAPP"/>
+                <value name="PTKA"/>
+                <value name="NNE"/>
+                <value name="--">not bound</value>
+            </feature>
+        </annotation>
+    </head>
+    <body>
+        <subcorpus external="file:subcorpus.xml" name="embedded corpus"/>
+    </body>
+</corpus>

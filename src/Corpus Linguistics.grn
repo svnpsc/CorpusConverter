@@ -1,0 +1,81 @@
+<uml>
+   <greenVersion="30500"/>
+   <type>
+      <name="=Corpus Linguistics/src<converter{TigerXmlConverter.java[TigerXmlConverter"/>
+      <height="130"/>
+      <width="190"/>
+      <x="160"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=Corpus Linguistics/src<converter{FrameNetConverter.java[FrameNetConverter"/>
+      <height="130"/>
+      <width="190"/>
+      <x="360"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=Corpus Linguistics/src<conll{Corpus.java[Corpus"/>
+      <height="170"/>
+      <width="130"/>
+      <x="0"/>
+      <y="140"/>
+   </type>
+   <type>
+      <name="=Corpus Linguistics/src<framenet.corpus{Corpus.java[Corpus"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="380"/>
+      <y="110"/>
+   </type>
+   <type>
+      <name="=Corpus Linguistics/src<tigerxml{Corpus.java[Corpus"/>
+      <height="310"/>
+      <width="130"/>
+      <x="190"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=Corpus Linguistics/src<converter{ConllConverter.java[ConllConverter"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="400"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=Corpus Linguistics/src<converter{TigerXmlConverter.java[TigerXmlConverter"/>
+      <targetType="=Corpus Linguistics/src<conll{Corpus.java[Corpus"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Corpus Linguistics/src<converter{FrameNetConverter.java[FrameNetConverter"/>
+      <targetType="=Corpus Linguistics/src<framenet.corpus{Corpus.java[Corpus"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=Corpus Linguistics/src<converter{TigerXmlConverter.java[TigerXmlConverter"/>
+      <targetType="=Corpus Linguistics/src<framenet.corpus{Corpus.java[Corpus"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Corpus Linguistics/src<converter{ConllConverter.java[ConllConverter"/>
+      <targetType="=Corpus Linguistics/src<conll{Corpus.java[Corpus"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.association.AssociationPart"/>
+      <sourceType="=Corpus Linguistics/src<converter{TigerXmlConverter.java[TigerXmlConverter"/>
+      <targetType="=Corpus Linguistics/src<tigerxml{Corpus.java[Corpus"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+</uml>
+

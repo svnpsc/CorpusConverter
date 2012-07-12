@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<corpus ID="c1" name="Test">
+	<documents>
+		<document ID="d1" description="TigerXmlManual">
+			<paragraphs>
+				<paragraph ID="p1" documentOrder="1">
+					<sentences>
+						<sentence ID="s1">
+							<text>Minister heizt Debatte über Sterbehilfe an</text>
+							<annotationSets>
+								<annotationSet ID="as1" status="UNANN">
+									<layers>
+										<layer ID="ly1" name="PT">
+											<labels>
+												<label name="NP" ID="lb1_1" start="15" end="38" />
+												<label name="PP" ID="lb1_2" start="23" end="38" />
+											</labels>
+										</layer>
+										<layer ID="ly2" name="GF">
+											<labels>
+												<label name="SB" ID="lb2_1" start="0" end="7" />
+												<label name="HD" ID="lb2_2" start="9" end="13" />
+												<label name="OA" ID="lb2_3" start="15" end="38" />
+												<label name="NK" ID="lb2_4" start="15" end="21" />
+												<label name="MNR" ID="lb2_5" start="23" end="38" />
+												<label name="AC" ID="lb2_6" start="23" end="26" />
+												<label name="NK" ID="lb2_7" start="28" end="38" />
+												<label name="SVP" ID="lb2_8" start="40" end="41" />
+											</labels>
+										</layer>
+										<layer ID="ly3" name="Other">
+											<labels>
+												<label name="NN" ID="lb3_1" start="0" end="7" />
+												<label name="VVFIN" ID="lb3_2" start="9" end="13" />
+												<label name="NN" ID="lb3_3" start="15" end="21" />
+												<label name="APPR" ID="lb3_4" start="23" end="26" />
+												<label name="NN" ID="lb3_5" start="28" end="38" />
+												<label name="PTKVZ" ID="lb3_6" start="40" end="41" />
+											</labels>
+										</layer>
+									</layers>
+								</annotationSet>
+							</annotationSets>
+						</sentence>
+					</sentences>
+				</paragraph>
+			</paragraphs>
+		</document>
+	</documents>
+</corpus>

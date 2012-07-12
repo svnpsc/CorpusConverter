@@ -1,0 +1,9 @@
+1	Die	_	ART	_	morph=Def.Fem.Nom.Sg	_	_	_	_
+2	Tagung	_	NN	_	morph=Fem.Nom.Sg.*	_	_	_	_
+3	hat	_	VVFIN	_	morph=3.Sg.Pres.Ind	_	_	_	_
+4	mehr	_	PIAT	_	morph=--	_	_	_	_
+5	Teilnehmer	_	NN	_	morph=Masc.Akk.Pl.*	_	_	_	_
+6	als	_	KOKOM	_	morph=--	_	_	_	_
+7	je	_	ADV	_	morph=--	_	_	_	_
+8	zuvor	_	ADV	_	morph=--	_	_	_	_
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus id="CoNLL/cnn_0000.conll">
+    <head>
+        <annotation>
+            <feature domain="T" name="word"/>
+            <feature domain="NT" name="pos">
+                <value name="S"/>
+                <value name=""/>
+                <value name="--">not bound</value>
+            </feature>
+        </annotation>
+    </head>
+    <body>
+        <subcorpus external="file:subcorpus.xml" name="embedded corpus"/>
+    </body>
+</corpus>

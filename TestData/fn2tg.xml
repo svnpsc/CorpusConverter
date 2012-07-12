@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus id="c1">
+    <head>
+        <annotation>
+            <feature domain="T" name="word"/>
+            <feature domain="NT" name="PT">
+                <value name="PP"/>
+                <value name="S"/>
+                <value name="NP"/>
+            </feature>
+            <feature domain="T" name="Other">
+                <value name="VVFIN"/>
+                <value name="APPR"/>
+                <value name="PTKVZ"/>
+                <value name="NN"/>
+            </feature>
+            <edgelabel>
+                <value name="AC"/>
+                <value name="HD"/>
+                <value name="NK"/>
+                <value name="SVP"/>
+                <value name="MNR"/>
+                <value name="OA"/>
+                <value name="SB"/>
+            </edgelabel>
+        </annotation>
+    </head>
+    <body>
+        <s id="s1">
+            <graph root="as1">
+                <terminals>
+                    <t id="t_0" Other="NN" word="Minister"/>
+                    <t id="t_9" Other="VVFIN" word="heizt"/>
+                    <t id="t_15" Other="NN" word="Debatte"/>
+                    <t id="t_23" Other="APPR" word="über"/>
+                    <t id="t_28" Other="NN" word="Sterbehilfe"/>
+                    <t id="t_40" Other="PTKVZ" word="an"/>
+                </terminals>
+                <nonterminals>
+                    <nt id="lb1_2" PT="PP">
+                        <edge label="AC" idref="t_23"/>
+                        <edge label="NK" idref="t_28"/>
+                    </nt>
+                    <nt id="lb1_1" PT="NP">
+                        <edge label="NK" idref="t_15"/>
+                        <edge label="MNR" idref="lb1_2"/>
+                    </nt>
+                    <nt id="as1" PT="S">
+                        <edge label="SB" idref="t_0"/>
+                        <edge label="HD" idref="t_9"/>
+                        <edge label="OA" idref="lb1_1"/>
+                        <edge label="SVP" idref="t_40"/>
+                    </nt>
+                </nonterminals>
+            </graph>
+        </s>
+    </body>
+</corpus>

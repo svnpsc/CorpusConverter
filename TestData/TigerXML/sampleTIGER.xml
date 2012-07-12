@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<corpus id="sampleTIGER">
+
+<body>
+
+<s id="s4228">
+<graph root="s4228_507">
+<terminals>
+ <t id="s4228_1" word="In" pos="APPR" />
+ <t id="s4228_2" word="Japan" pos="NE" />
+ <t id="s4228_3" word="wird" pos="VAFIN" />
+ <t id="s4228_4" word="offenbar" pos="ADJD" />
+ <t id="s4228_5" word="die" pos="ART" />
+ <t id="s4228_6" word="Fusion" pos="NN" />
+ <t id="s4228_7" word="der" pos="ART" />
+ <t id="s4228_8" word="Geldkonzerne" pos="NN" />
+ <t id="s4228_9" word="Daiwa" pos="NE" />
+ <t id="s4228_10" word="und" pos="KON" />
+ <t id="s4228_11" word="Sumitomo" pos="NE" />
+ <t id="s4228_12" word="zur" pos="APPRART" />
+ <t id="s4228_13" word="größten" pos="ADJA" />
+ <t id="s4228_14" word="Bank" pos="NN" />
+ <t id="s4228_15" word="der" pos="ART" />
+ <t id="s4228_16" word="Welt" pos="NN" />
+ <t id="s4228_17" word="vorbereitet" pos="VVPP" />
+ <t id="s4228_18" word="." pos="$." />
+</terminals>
+<nonterminals>
+ <nt id="s4228_500" cat="PP">
+  <edge label="AC" idref="s4228_1" />
+  <edge label="NK" idref="s4228_2" />
+ </nt>
+ <nt id="s4228_501" cat="CNP">
+  <edge label="CJ" idref="s4228_9" />
+  <edge label="CD" idref="s4228_10" />
+  <edge label="CJ" idref="s4228_11" />
+ </nt>
+ <nt id="s4228_502" cat="NP">
+  <edge label="NK" idref="s4228_15" />
+  <edge label="NK" idref="s4228_16" />
+ </nt>
+ <nt id="s4228_503" cat="NP">
+  <edge label="NK" idref="s4228_7" />
+  <edge label="NK" idref="s4228_8" />
+  <edge label="NK" idref="s4228_501" />
+ </nt>
+ <nt id="s4228_504" cat="VP">
+  <edge label="MO" idref="s4228_4" />
+  <edge label="HD" idref="s4228_17" />
+  <edge label="MO" idref="s4228_500" />
+ </nt>
+ <nt id="s4228_505" cat="PP">
+  <edge label="AC" idref="s4228_12" />
+  <edge label="NK" idref="s4228_13" />
+  <edge label="NK" idref="s4228_14" />
+  <edge label="AG" idref="s4228_502" />
+ </nt>
+ <nt id="s4228_506" cat="NP">
+  <edge label="NK" idref="s4228_5" />
+  <edge label="NK" idref="s4228_6" />
+  <edge label="AG" idref="s4228_503" />
+  <edge label="MNR" idref="s4228_505" />
+ </nt>
+ <nt id="s4228_507" cat="S">
+  <edge label="HD" idref="s4228_3" />
+  <edge label="OC" idref="s4228_504" />
+  <edge label="SB" idref="s4228_506" />
+ </nt>
+</nonterminals>
+</graph>
+</s>
+
+</body>
+
+</corpus>

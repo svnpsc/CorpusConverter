@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<corpus id="TestData/CoNLL/danish_ddt_test_blind.conll">
+    <head>
+        <annotation>
+            <feature domain="T" name="word"/>
+            <feature domain="T" name="person">
+                <value name="3"/>
+                <value name="1"/>
+                <value name="2"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="voice">
+                <value name="active"/>
+                <value name="passive"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="reflexive">
+                <value name="no"/>
+                <value name="yes"/>
+                <value name="yes/no"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="possessor">
+                <value name="plur"/>
+                <value name="sing"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="tense">
+                <value name="present"/>
+                <value name="past"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="mood">
+                <value name="indic"/>
+                <value name="infin"/>
+                <value name="partic"/>
+                <value name="imper"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="number">
+                <value name="plur"/>
+                <value name="sing"/>
+                <value name="sing/plur"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="transcat">
+                <value name="unmarked"/>
+                <value name="adverbial"/>
+                <value name="adject/adverb/unmarked"/>
+                <value name="adject"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="NT" name="pos">
+                <value name="S"/>
+                <value name="AC"/>
+                <value name="AN"/>
+                <value name="NC"/>
+                <value name="NP"/>
+                <value name="CC"/>
+                <value name="VA"/>
+                <value name="RG"/>
+                <value name="XP"/>
+                <value name="CS"/>
+                <value name="SP"/>
+                <value name="PI"/>
+                <value name="PP"/>
+                <value name="PO"/>
+                <value name="XX"/>
+                <value name="U"/>
+                <value name="PC"/>
+                <value name="PD"/>
+                <value name="PT"/>
+                <value name="VE"/>
+                <value name="AO"/>
+                <value name="XF"/>
+                <value name="I"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="register">
+                <value name="unmarked"/>
+                <value name="formal"/>
+                <value name="polite"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="degree">
+                <value name="pos"/>
+                <value name="unmarked"/>
+                <value name="comp"/>
+                <value name="sup"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="def">
+                <value name="def/indef"/>
+                <value name="indef"/>
+                <value name="def"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="definiteness">
+                <value name="indef"/>
+                <value name="def/indef"/>
+                <value name="def"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="gender">
+                <value name="common/neuter"/>
+                <value name="common"/>
+                <value name="neuter"/>
+                <value name="--">not bound</value>
+            </feature>
+            <feature domain="T" name="case">
+                <value name="unmarked"/>
+                <value name="nom"/>
+                <value name="gen"/>
+                <value name="--">not bound</value>
+            </feature>
+        </annotation>
+    </head>
+    <body>
+        <subcorpus external="file:subcorpus.xml" name="embedded corpus"/>
+    </body>
+</corpus>
