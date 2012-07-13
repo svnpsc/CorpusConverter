@@ -122,6 +122,7 @@ public class TigerXmlConverter implements ConvertableIntoConll, ConvertableIntoF
 
 	private static final String NONTERMINAL_FEATURE_DOMAIN = "NT";
 
+	private static final String DEFAULT_CORPUS_NAME = "Converted TigerXML Corpus";
 	private static final String DEFAULT_DOCUMENT_ID = "d1";
 	private static final String DEFAULT_PARAGRAPH_ID = "p1";
 	private static final String DEFAULT_PARAGRAPH_DOCUMENT_ORDER = "1";
@@ -133,6 +134,7 @@ public class TigerXmlConverter implements ConvertableIntoConll, ConvertableIntoF
 	private static final String DEFAULT_WORD_FEATURE_NAME = "word";
 	private static final String DEFAULT_LEMMA_FEATURE_NAME = "lemma";
 	private static final String DEFAULT_POS_FEATURE_NAME = "pos";
+	private static final String NOT_BOUND_FEATURE_VALUE = "--";
 	
 	private tigerxml.Corpus source;
 	
@@ -145,6 +147,11 @@ public class TigerXmlConverter implements ConvertableIntoConll, ConvertableIntoF
 		this.source = source;
 	}
 
+	
+	@Override
+	public framenet.corpus.Corpus toFrameNet() {
+		return toFrameNet(DEFAULT_CORPUS_NAME);
+	}
 	
 	@Override
 	public framenet.corpus.Corpus toFrameNet(String name) {
@@ -241,6 +248,7 @@ public class TigerXmlConverter implements ConvertableIntoConll, ConvertableIntoF
 		int labelCounter = 1;
 		for (Nt nonterminal : sourceSentence.getGraph().getNonterminals().getNt()) {
 			for (Edge edge : nonterminal.getEdge()) {
+				if (edge.getLabel().equals(NOT_BOUND_FEATURE_VALUE)) continue;
 				result.addLabel(createGfLabel(layerIdSuffix(idPath, layerNumber), labelCounter++, edge));
 			}
 		}
@@ -260,6 +268,7 @@ public class TigerXmlConverter implements ConvertableIntoConll, ConvertableIntoF
 		framenet.corpus.Layer result = createLayer(idPath, layerNumber, "Other");
 		int labelCounter = 1;
 		for (T terminal : sourceSentence.getTerminals()) {
+			if (terminal.getAttributeValue(featureName).equals(NOT_BOUND_FEATURE_VALUE)) continue;
 			result.addLabel(createOtherLabel(layerIdSuffix(idPath, layerNumber), labelCounter++, terminal, featureName));
 		}
 		return result;
@@ -371,6 +380,7 @@ public class TigerXmlConverter implements ConvertableIntoConll, ConvertableIntoF
 		for (QName attributeQName : getAttributeNames(t)) {
 			String attributeName = attributeQName.toString();
 			String attributeValue = t.getAttributeValue(attributeQName);
+			if (attributeValue.equals(NOT_BOUND_FEATURE_VALUE)) continue;
 			if (isMappedToFeatureField(attributeName)) {
 				result.addFeature(attributeToString(attributeName, attributeValue));
 			} else {

@@ -42,7 +42,7 @@ public class ConverterApp {
 		
 		Object sourceCorpusConverter = null;
 		try {
-			sourceCorpusConverter = loadSourceCorpus(sourceFormat, sourcePath);
+			sourceCorpusConverter = loadSourceCorpusConverter(sourceFormat, sourcePath);
 		} catch (Exception e) {
 			System.out.println("Error loading source corpus:\n" + e.getMessage());
 			return;
@@ -50,7 +50,7 @@ public class ConverterApp {
 
 		Object targetCorpus = null;
 		try {
-			targetCorpus = convertCorpus(sourceCorpusConverter, targetFormat, targetName);
+			targetCorpus = tryToConvertCorpus(sourceCorpusConverter, targetFormat, targetName);
 		} catch (Exception e) {
 			System.out.println("Error converting into specified target corpus format:\n" + e.getMessage());
 			e.printStackTrace();
@@ -80,20 +80,26 @@ public class ConverterApp {
 							"java -jar Converter.jar -tg a_corpus.xml -cn new_corpus.conll");
 	}
 	
-	private static Object loadSourceCorpus(String format, String path) throws FileNotFoundException, IOException, JAXBException {
+	private static Object loadSourceCorpusConverter(String format, String path) throws FileNotFoundException, IOException, JAXBException {
 		if (format.equals(CONLL_FORMAT_PARAMETER)) return new ConllConverter(conll.ConllMapper.load(path));
 		if (format.equals(TIGERXML_FORMAT_PARAMETER)) return new TigerXmlConverter(tigerxml.TigerXmlMapper.load(path));
 		if (format.equals(FRAMENET_FORMAT_PARAMETER)) return new FrameNetConverter(framenet.FrameNetMapper.load(path));
 		throw new IllegalArgumentException("Illegal source format parameter.");
 	}
 	
+	private static Object tryToConvertCorpus(Object sourceCorpusConverter, String format, String name) {
+		try {
+			return convertCorpus(sourceCorpusConverter, format, name);
+		} catch (ClassCastException e) {
+			Object intermediate = convertCorpus(sourceCorpusConverter, TIGERXML_FORMAT_PARAMETER, name);
+			return convertCorpus(new TigerXmlConverter((tigerxml.Corpus) intermediate), format, name);
+		}
+	}
+	
 	private static Object convertCorpus(Object sourceCorpusConverter, String format, String name) {
 		if (format.equals(CONLL_FORMAT_PARAMETER)) return ((ConvertableIntoConll) sourceCorpusConverter).toConll();
 		if (format.equals(TIGERXML_FORMAT_PARAMETER)) return ((ConvertableIntoTigerXml) sourceCorpusConverter).toTigerXml();
-		if (format.equals(FRAMENET_FORMAT_PARAMETER)) {
-			if (name == null) throw new IllegalArgumentException("FrameNet requires target corpus name as fifth argument.");
-			return ((ConvertableIntoFrameNet) sourceCorpusConverter).toFrameNet(name);
-		}
+		if (format.equals(FRAMENET_FORMAT_PARAMETER)) return ((ConvertableIntoFrameNet) sourceCorpusConverter).toFrameNet(name);
 		throw new IllegalArgumentException("Illegal target format parameter.");
 	}
 	

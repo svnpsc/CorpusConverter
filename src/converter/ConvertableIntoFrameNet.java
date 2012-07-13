@@ -8,6 +8,8 @@ package converter;
 
 public interface ConvertableIntoFrameNet {
 
+	public abstract framenet.corpus.Corpus toFrameNet();
+
 	public abstract framenet.corpus.Corpus toFrameNet(String name);
 
 }
