@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<corpus id="TestData/CoNLL/danish_ddt_test_blind.conll">
+<corpus id="src/test/data/CoNLL/danish_ddt_test_blind.conll">
     <head>
         <annotation>
             <feature domain="T" name="word"/>

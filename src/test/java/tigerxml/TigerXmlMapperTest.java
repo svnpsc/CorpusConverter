@@ -11,8 +11,8 @@ import tigerxml.TigerXmlMapper;
 public class TigerXmlMapperTest {
 
 	static final String SAMPLE_CORPUS_ID = "sampleTIGER";
-	static final String SAMPLE_CORPUS_PATH = "TestData/TigerXML/sampleTIGER.xml";
-	static final String XML_OUTPUT_PATH = "TestData/TigerXML/mapper_out.xml";
+	static final String SAMPLE_CORPUS_PATH = "src/test/data/TigerXML/sampleTIGER.xml";
+	static final String XML_OUTPUT_PATH = "src/test/data/TigerXML/mapper_out.xml";
 
 	@Test
 	public void loadingCorpus() {

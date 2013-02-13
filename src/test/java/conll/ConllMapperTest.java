@@ -8,8 +8,8 @@ import java.io.*;
 
 public class ConllMapperTest {
 
-	static final String TEST_FILE = "TestData/CoNLL/danish_ddt_test_blind.conll";
-	static final String OUTPUT_FILE = "TestData/CoNLL/output.conll";
+	static final String TEST_FILE = "src/test/data/CoNLL/danish_ddt_test_blind.conll";
+	static final String OUTPUT_FILE = "src/test/data/CoNLL/output.conll";
 
 	@Test
 	public void createFromTestFile() {

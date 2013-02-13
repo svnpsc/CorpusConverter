@@ -11,8 +11,8 @@ import javax.xml.bind.JAXBException;
 
 public class ConllConverterTest {
 
-	private static final String SOURCE_PATH = "TestData/CoNLL/danish_ddt_test_blind.conll";
-	private static final String TARGET_PATH = "TestData/TigerXML/fromCoNLL.xml";
+	private static final String SOURCE_PATH = "src/test/data/CoNLL/danish_ddt_test_blind.conll";
+	private static final String TARGET_PATH = "src/test/data/TigerXML/fromCoNLL.xml";
 
 	@Test
 	public void convertAndSaveToTigerXml() {

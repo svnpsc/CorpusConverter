@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class TigerXmlConverterTest {
 
-	private static final String SAMPLE_TIGER_XML_CORPUS_PATH = "TestData/TigerXML/Testcorpus.xml";
+	private static final String SAMPLE_TIGER_XML_CORPUS_PATH = "src/test/data/TigerXML/Testcorpus.xml";
 
 	private TigerXmlConverter converter = null;
 	private Corpus source = null;
@@ -31,7 +31,7 @@ public class TigerXmlConverterTest {
 	public void convertToFrameNet() {
 		framenet.corpus.Corpus target = converter.toFrameNet("Testcorpus");
 		try {
-			framenet.FrameNetMapper.save(target, "TestData/TigerXML/TestcorpusAsFrameNet.xml");
+			framenet.FrameNetMapper.save(target, "src/test/data/TigerXML/TestcorpusAsFrameNet.xml");
 		} catch (IOException e) {
 			fail("Saving failed. IOException was thrown: " + e.getMessage());
 		} catch (JAXBException e) {
@@ -45,7 +45,7 @@ public class TigerXmlConverterTest {
 		assertNotNull("NULL returned instead of conll.Corpus object.", target);
 		assertEquals("Wrong corpus name.", source.getId(), target.getName());
 		try {
-			conll.ConllMapper.save(target, "TestData/CoNLL/TestcorpusFromTigerXml.xml");
+			conll.ConllMapper.save(target, "src/test/data/CoNLL/TestcorpusFromTigerXml.xml");
 		} catch (IOException e) {
 			fail("Saving failed. IOException was thrown: " + e.getMessage());
 		}		

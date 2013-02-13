@@ -8,6 +8,6 @@ an ease way to work with some of them in an intuitive object oriented way and co
 format to another.
 
 This project evolved from a hands-on seminar at the chair in Computational Linguistics at the
-University of Trier. For detailed information please read the Ausarbeitung.pdf document (in german).
+University of Trier. For detailed information please read the PDF document Ausarbeitung.pdf (in german).
 
 For an API usage example take a look at /src/Sample.java. 

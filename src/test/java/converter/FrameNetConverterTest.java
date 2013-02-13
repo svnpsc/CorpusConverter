@@ -15,8 +15,8 @@ import java.util.List;
 @RunWith(Theories.class)
 public class FrameNetConverterTest {
 
-	private static final String SAMPLE_CORPUS_PATH = "TestData/FrameNet/NTICorpus.xml";
-	private static final String SAMPLE_CORPUS_TWO_PATH = "TestData/FrameNet/SmallTest.xml";
+	private static final String SAMPLE_CORPUS_PATH = "src/test/data/FrameNet/NTICorpus.xml";
+	private static final String SAMPLE_CORPUS_TWO_PATH = "src/test/data/FrameNet/SmallTest.xml";
 	
 	@DataPoints
 	public static String[] layerNamesToRemove = { "Target", "FE", "GF", "PT", "Other", "Verb", "Sent", "BNC" }; 
@@ -36,7 +36,7 @@ public class FrameNetConverterTest {
 		initConverterWithSource(SAMPLE_CORPUS_TWO_PATH);
 		
 		tigerxml.Corpus target = converter.toTigerXml();
-		tigerxml.TigerXmlMapper.save(target, "TestData/FrameNet/SmallTestAsTigerXML.xml");
+		tigerxml.TigerXmlMapper.save(target, "src/test/data/FrameNet/SmallTestAsTigerXML.xml");
 		
 		assertThat(target, notNullValue());
 		assertThat(target.getId(), is(source.getID()));
