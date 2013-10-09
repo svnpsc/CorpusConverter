@@ -7,4 +7,4 @@ In corpus linguistics different kinds of formats are in use. This JAVA project t
 
 This project evolved from a hands-on seminar at the chair in Computational Linguistics at the University of Trier.
 
-For an API usage example take a look at /src/Sample.java. 
+For an API usage example take a look at /src/main/java/converter/Sample.java. 
