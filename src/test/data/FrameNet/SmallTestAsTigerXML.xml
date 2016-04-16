@@ -2,25 +2,25 @@
 <corpus id="c1">
     <head>
         <annotation>
-            <feature domain="T" name="word"/>
-            <feature domain="NT" name="PT">
+            <feature name="word" domain="T"/>
+            <feature name="PT" domain="NT">
                 <value name="PP"/>
-                <value name="S"/>
                 <value name="NP"/>
+                <value name="S"/>
             </feature>
-            <feature domain="T" name="Other">
+            <feature name="Other" domain="T">
+                <value name="NN"/>
+                <value name="PTKVZ"/>
                 <value name="VVFIN"/>
                 <value name="APPR"/>
-                <value name="PTKVZ"/>
-                <value name="NN"/>
             </feature>
             <edgelabel>
-                <value name="AC"/>
-                <value name="HD"/>
-                <value name="NK"/>
-                <value name="SVP"/>
                 <value name="MNR"/>
+                <value name="AC"/>
                 <value name="OA"/>
+                <value name="HD"/>
+                <value name="SVP"/>
+                <value name="NK"/>
                 <value name="SB"/>
             </edgelabel>
         </annotation>
@@ -29,27 +29,27 @@
         <s id="s1">
             <graph root="as1">
                 <terminals>
-                    <t id="t_0" Other="NN" word="Minister"/>
-                    <t id="t_9" Other="VVFIN" word="heizt"/>
-                    <t id="t_15" Other="NN" word="Debatte"/>
-                    <t id="t_23" Other="APPR" word="über"/>
-                    <t id="t_28" Other="NN" word="Sterbehilfe"/>
-                    <t id="t_40" Other="PTKVZ" word="an"/>
+                    <t id="t_0" word="Minister" Other="NN"/>
+                    <t id="t_9" word="heizt" Other="VVFIN"/>
+                    <t id="t_15" word="Debatte" Other="NN"/>
+                    <t id="t_23" word="über" Other="APPR"/>
+                    <t id="t_28" word="Sterbehilfe" Other="NN"/>
+                    <t id="t_40" word="an" Other="PTKVZ"/>
                 </terminals>
                 <nonterminals>
                     <nt id="lb1_2" PT="PP">
-                        <edge label="AC" idref="t_23"/>
-                        <edge label="NK" idref="t_28"/>
+                        <edge idref="t_23" label="AC"/>
+                        <edge idref="t_28" label="NK"/>
                     </nt>
                     <nt id="lb1_1" PT="NP">
-                        <edge label="NK" idref="t_15"/>
-                        <edge label="MNR" idref="lb1_2"/>
+                        <edge idref="t_15" label="NK"/>
+                        <edge idref="lb1_2" label="MNR"/>
                     </nt>
                     <nt id="as1" PT="S">
-                        <edge label="SB" idref="t_0"/>
-                        <edge label="HD" idref="t_9"/>
-                        <edge label="OA" idref="lb1_1"/>
-                        <edge label="SVP" idref="t_40"/>
+                        <edge idref="t_0" label="SB"/>
+                        <edge idref="t_9" label="HD"/>
+                        <edge idref="lb1_1" label="OA"/>
+                        <edge idref="t_40" label="SVP"/>
                     </nt>
                 </nonterminals>
             </graph>

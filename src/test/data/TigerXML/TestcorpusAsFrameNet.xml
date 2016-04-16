@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<corpus name="Testcorpus" ID="TESTCORPUS">
+<corpus ID="TESTCORPUS" name="Testcorpus">
     <documents>
-        <document description="Testcorpus's content" ID="d1">
+        <document ID="d1" description="Testcorpus's content">
             <paragraphs>
-                <paragraph documentOrder="1" ID="p1">
+                <paragraph ID="p1" documentOrder="1">
                     <sentences>
                         <sentence ID="s5">
                             <text>Die Tagung hat mehr Teilnehmer als je zuvor</text>
                             <annotationSets>
-<annotationSet status="" ID="as1_1">
+<annotationSet ID="as1_1" status="">
     <layers>
-        <layer name="GF" ID="lr1_1_1">
+        <layer ID="lr1_1_1" name="GF">
             <labels>
-                <label end="2" start="0" name="NK" ID="lb1_1_1_1"/>
-                <label end="9" start="4" name="NK" ID="lb1_1_1_2"/>
-                <label end="33" start="31" name="CM" ID="lb1_1_1_3"/>
-                <label end="36" start="35" name="MO" ID="lb1_1_1_4"/>
-                <label end="42" start="38" name="HD" ID="lb1_1_1_5"/>
-                <label end="18" start="15" name="HD" ID="lb1_1_1_6"/>
-                <label end="42" start="31" name="CC" ID="lb1_1_1_7"/>
-                <label end="42" start="15" name="NK" ID="lb1_1_1_8"/>
-                <label end="29" start="20" name="NK" ID="lb1_1_1_9"/>
-                <label end="9" start="0" name="SB" ID="lb1_1_1_10"/>
-                <label end="13" start="11" name="HD" ID="lb1_1_1_11"/>
-                <label end="42" start="15" name="OA" ID="lb1_1_1_12"/>
+                <label ID="lb1_1_1_1" name="NK" start="0" end="2"/>
+                <label ID="lb1_1_1_2" name="NK" start="4" end="9"/>
+                <label ID="lb1_1_1_3" name="CM" start="31" end="33"/>
+                <label ID="lb1_1_1_4" name="MO" start="35" end="36"/>
+                <label ID="lb1_1_1_5" name="HD" start="38" end="42"/>
+                <label ID="lb1_1_1_6" name="HD" start="15" end="18"/>
+                <label ID="lb1_1_1_7" name="CC" start="31" end="42"/>
+                <label ID="lb1_1_1_8" name="NK" start="15" end="42"/>
+                <label ID="lb1_1_1_9" name="NK" start="20" end="29"/>
+                <label ID="lb1_1_1_10" name="SB" start="0" end="9"/>
+                <label ID="lb1_1_1_11" name="HD" start="11" end="13"/>
+                <label ID="lb1_1_1_12" name="OA" start="15" end="42"/>
             </labels>
         </layer>
-        <layer name="Other" ID="lr1_1_2">
+        <layer ID="lr1_1_2" name="Other">
             <labels>
-                <label end="2" start="0" name="ART" ID="lb1_1_2_1"/>
-                <label end="9" start="4" name="NN" ID="lb1_1_2_2"/>
-                <label end="13" start="11" name="VVFIN" ID="lb1_1_2_3"/>
-                <label end="18" start="15" name="PIAT" ID="lb1_1_2_4"/>
-                <label end="29" start="20" name="NN" ID="lb1_1_2_5"/>
-                <label end="33" start="31" name="KOKOM" ID="lb1_1_2_6"/>
-                <label end="36" start="35" name="ADV" ID="lb1_1_2_7"/>
-                <label end="42" start="38" name="ADV" ID="lb1_1_2_8"/>
+                <label ID="lb1_1_2_1" name="ART" start="0" end="2"/>
+                <label ID="lb1_1_2_2" name="NN" start="4" end="9"/>
+                <label ID="lb1_1_2_3" name="VVFIN" start="11" end="13"/>
+                <label ID="lb1_1_2_4" name="PIAT" start="15" end="18"/>
+                <label ID="lb1_1_2_5" name="NN" start="20" end="29"/>
+                <label ID="lb1_1_2_6" name="KOKOM" start="31" end="33"/>
+                <label ID="lb1_1_2_7" name="ADV" start="35" end="36"/>
+                <label ID="lb1_1_2_8" name="ADV" start="38" end="42"/>
             </labels>
         </layer>
-        <layer name="PT" ID="lr1_2_1">
+        <layer ID="lr1_2_1" name="PT">
             <labels>
-                <label end="9" start="0" name="NP" ID="lb1_2_1_1"/>
-                <label end="42" start="31" name="AVP" ID="lb1_2_1_2"/>
-                <label end="42" start="15" name="AP" ID="lb1_2_1_3"/>
-                <label end="42" start="15" name="NP" ID="lb1_2_1_4"/>
-                <label end="42" start="0" name="S" ID="lb1_2_1_5"/>
+                <label ID="lb1_2_1_1" name="NP" start="0" end="9"/>
+                <label ID="lb1_2_1_2" name="AVP" start="31" end="42"/>
+                <label ID="lb1_2_1_3" name="AP" start="15" end="42"/>
+                <label ID="lb1_2_1_4" name="NP" start="15" end="42"/>
+                <label ID="lb1_2_1_5" name="S" start="0" end="42"/>
             </labels>
         </layer>
     </layers>
 </annotationSet>
-<annotationSet status="" ID="as1_2">
+<annotationSet ID="as1_2" status="">
     <layers>
-        <layer name="Other" ID="lr1_2_1">
+        <layer ID="lr1_2_1" name="Other">
             <labels>
-                <label end="2" start="0" name="Def.Fem.Nom.Sg" ID="lb1_2_1_1"/>
-                <label end="9" start="4" name="Fem.Nom.Sg.*" ID="lb1_2_1_2"/>
-                <label end="13" start="11" name="3.Sg.Pres.Ind" ID="lb1_2_1_3"/>
-                <label end="29" start="20" name="Masc.Akk.Pl.*" ID="lb1_2_1_4"/>
+                <label ID="lb1_2_1_1" name="Def.Fem.Nom.Sg" start="0" end="2"/>
+                <label ID="lb1_2_1_2" name="Fem.Nom.Sg.*" start="4" end="9"/>
+                <label ID="lb1_2_1_3" name="3.Sg.Pres.Ind" start="11" end="13"/>
+                <label ID="lb1_2_1_4" name="Masc.Akk.Pl.*" start="20" end="29"/>
             </labels>
         </layer>
     </layers>

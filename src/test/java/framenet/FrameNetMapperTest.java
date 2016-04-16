@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class FrameNetMapperTest {
 
-	static final String TEST_FILE = "src/test/data/FrameNet/NTICorpus.xml";
+	static final String TEST_FILE = "data/FrameNet/NTICorpus.xml";
 	
 	@Test
 	public void createFromTestFile() {
